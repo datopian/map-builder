@@ -1,1 +1,1 @@
-export { MapBuilder } from './ChartBuilder';
+export { MapBuilder } from './MapBuilder';

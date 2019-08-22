@@ -6,8 +6,8 @@ Object.defineProperty(exports, "__esModule", {
 Object.defineProperty(exports, "MapBuilder", {
   enumerable: true,
   get: function get() {
-    return _ChartBuilder.MapBuilder;
+    return _MapBuilder.MapBuilder;
   }
 });
 
-var _ChartBuilder = require("./ChartBuilder");
+var _MapBuilder = require("./MapBuilder");
