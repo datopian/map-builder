@@ -1,0 +1,54 @@
+{
+  "name": "map-builder",
+  "version": "0.0.1",
+  "private": false,
+  "module": "dist/index.js",
+  "main": "dist/index.js",
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ]
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "@testing-library/jest-dom": "^4.1.0",
+    "@testing-library/react": "^9.1.3",
+    "react-cosmos": "^4.8.1",
+    "react-scripts": "3.1.1",
+    "tailwindcss": "^1.1.2"
+  },
+  "dependencies": {
+    "formik": "^1.5.8",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
+  },
+  "scripts": {
+    "cosmos": "yarn tailwind:css && cosmos",
+    "cosmos:export": "cosmos-export",
+    "start": "yarn tailwind:css && react-scripts start",
+    "build": "yarn tailwind:css && react-scripts build",
+    "build:package": "rm -rf dist/ && mkdir dist && NODE_ENV=production npx babel src/ -d dist/ --copy-files",
+    "test": "react-scripts test",
+    "tailwind:css": "tailwind build src/css/tailwind.src.css -c tailwind.js -o src/css/tailwind.css",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
