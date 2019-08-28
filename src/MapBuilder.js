@@ -41,10 +41,10 @@ export const MapBuilder = (props) => {
         }}
         onSubmit={values => handleSubmit(values)}
         render={({ values, setFieldValue }) => (
-          <Form className="bg-white text-xsm p-3 text-left ">
+          <Form className="bg-white text-xs p-3 text-left ">
             <div className="flex flex-wrap ">
               <div className="w-full mb-3">
-                <label htmlFor="lonField" className="text-xsm font-bold uppercase text-gray-700">Longitude field</label>
+                <label htmlFor="lonField" className="text-xs font-bold uppercase text-gray-700">Longitude field</label>
                 <div className="relative">
                   <Field name="lonField" component="select" placeholder="Longitude field" className="block appearance-none w-full mt-1 bg-gray-200 border border-gray-200 text-gray-700 py-2 px-2 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
                     {fields.map((field, index) => {
@@ -58,7 +58,7 @@ export const MapBuilder = (props) => {
               </div>
 
               <div className="w-full mb-3">
-                <label htmlFor="latField" className="text-xsm  font-bold uppercase text-gray-700">Latitude field</label>
+                <label htmlFor="latField" className="text-xs  font-bold uppercase text-gray-700">Latitude field</label>
                 <div className="relative">
                   <Field name="latField" component="select" placeholder="Latitude field" className="block appearance-none w-full mt-1 bg-gray-200 border border-gray-200 text-gray-700 py-2 px-2 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
                     {fields.map((field, index) => {
@@ -72,20 +72,20 @@ export const MapBuilder = (props) => {
               </div>
 
             <div className="w-full mb-3">
-                <label htmlFor="infobox" className="text-xsm  font-bold uppercase text-gray-700">Infobox</label>
+                <label htmlFor="infobox" className="text-xs  font-bold uppercase text-gray-700">Infobox</label>
                 <div className="relative">
                   <Field name="infobox" type="text" placeholder="My popup: ${data.fieldName}" className="block appearance-none w-full mt-1 bg-gray-200 border border-gray-200 text-gray-700 py-2 px-2 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" />
                 </div>
             </div>
-            
-            <div className="w-full mb-3">       
+
+            <div className="w-full mb-3">
               <div className="flex justify-center">
                   <button type="submit" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-2 rounded focus:outline-none focus:shadow-outline">
                     Add map
                   </button>
               </div>
-            </div>  
-          </div>  
+            </div>
+          </div>
           </Form>
         )}
       />

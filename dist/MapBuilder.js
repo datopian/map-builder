@@ -58,14 +58,14 @@ var MapBuilder = function MapBuilder(props) {
       var values = _ref.values,
           setFieldValue = _ref.setFieldValue;
       return _react.default.createElement(_formik.Form, {
-        className: "bg-white text-xsm p-3 text-left "
+        className: "bg-white text-xs p-3 text-left "
       }, _react.default.createElement("div", {
         className: "flex flex-wrap "
       }, _react.default.createElement("div", {
         className: "w-full mb-3"
       }, _react.default.createElement("label", {
         htmlFor: "lonField",
-        className: "text-xsm font-bold uppercase text-gray-700"
+        className: "text-xs font-bold uppercase text-gray-700"
       }, "Longitude field"), _react.default.createElement("div", {
         className: "relative"
       }, _react.default.createElement(_formik.Field, {
@@ -90,7 +90,7 @@ var MapBuilder = function MapBuilder(props) {
         className: "w-full mb-3"
       }, _react.default.createElement("label", {
         htmlFor: "latField",
-        className: "text-xsm  font-bold uppercase text-gray-700"
+        className: "text-xs  font-bold uppercase text-gray-700"
       }, "Latitude field"), _react.default.createElement("div", {
         className: "relative"
       }, _react.default.createElement(_formik.Field, {
@@ -115,7 +115,7 @@ var MapBuilder = function MapBuilder(props) {
         className: "w-full mb-3"
       }, _react.default.createElement("label", {
         htmlFor: "infobox",
-        className: "text-xsm  font-bold uppercase text-gray-700"
+        className: "text-xs  font-bold uppercase text-gray-700"
       }, "Infobox"), _react.default.createElement("div", {
         className: "relative"
       }, _react.default.createElement(_formik.Field, {
