@@ -44,9 +44,7 @@ var MapBuilder = function MapBuilder(props) {
     props.dataViewBuilderAction(view);
   }
 
-  return _react.default.createElement("div", {
-    className: "text-center w-full max-w-lg"
-  }, _react.default.createElement(_formik.Formik, {
+  return _react.default.createElement(_formik.Formik, {
     initialValues: {
       lonField: fields[0].name,
       latField: fields[0].name,
@@ -60,21 +58,21 @@ var MapBuilder = function MapBuilder(props) {
       var values = _ref.values,
           setFieldValue = _ref.setFieldValue;
       return _react.default.createElement(_formik.Form, {
-        className: "bg-white"
+        className: "bg-white text-xsm p-3 text-left "
       }, _react.default.createElement("div", {
-        className: "flex flex-wrap -mx-3 mb-2"
+        className: "flex flex-wrap "
       }, _react.default.createElement("div", {
-        className: "w-full md:w-1/2 px-3 mb-6 md:mb-0"
+        className: "w-full mb-3"
       }, _react.default.createElement("label", {
         htmlFor: "lonField",
-        className: "block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+        className: "text-xsm font-bold uppercase text-gray-700"
       }, "Longitude field"), _react.default.createElement("div", {
         className: "relative"
       }, _react.default.createElement(_formik.Field, {
         name: "lonField",
         component: "select",
         placeholder: "Longitude field",
-        className: "block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+        className: "block appearance-none w-full mt-1 bg-gray-200 border border-gray-200 text-gray-700 py-2 px-2 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
       }, fields.map(function (field, index) {
         return _react.default.createElement("option", {
           value: field.name,
@@ -89,17 +87,17 @@ var MapBuilder = function MapBuilder(props) {
       }, _react.default.createElement("path", {
         d: "M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
       }))))), _react.default.createElement("div", {
-        className: "w-full md:w-1/2 px-3 mb-6 md:mb-0"
+        className: "w-full mb-3"
       }, _react.default.createElement("label", {
         htmlFor: "latField",
-        className: "block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+        className: "text-xsm  font-bold uppercase text-gray-700"
       }, "Latitude field"), _react.default.createElement("div", {
         className: "relative"
       }, _react.default.createElement(_formik.Field, {
         name: "latField",
         component: "select",
         placeholder: "Latitude field",
-        className: "block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+        className: "block appearance-none w-full mt-1 bg-gray-200 border border-gray-200 text-gray-700 py-2 px-2 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
       }, fields.map(function (field, index) {
         return _react.default.createElement("option", {
           value: field.name,
@@ -113,34 +111,28 @@ var MapBuilder = function MapBuilder(props) {
         viewBox: "0 0 20 20"
       }, _react.default.createElement("path", {
         d: "M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
-      })))))), _react.default.createElement("div", {
-        className: "flex flex-wrap -mx-3 mb-2"
-      }, _react.default.createElement("div", {
-        className: "w-full md:w-full px-3 mb-6 md:mb-0"
+      }))))), _react.default.createElement("div", {
+        className: "w-full mb-3"
       }, _react.default.createElement("label", {
         htmlFor: "infobox",
-        className: "block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+        className: "text-xsm  font-bold uppercase text-gray-700"
       }, "Infobox"), _react.default.createElement("div", {
         className: "relative"
       }, _react.default.createElement(_formik.Field, {
         name: "infobox",
         type: "text",
         placeholder: "My popup: ${data.fieldName}",
-        className: "block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-      })))), _react.default.createElement("div", {
-        className: "flex items-center"
+        className: "block appearance-none w-full mt-1 bg-gray-200 border border-gray-200 text-gray-700 py-2 px-2 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+      }))), _react.default.createElement("div", {
+        className: "w-full mb-3"
       }, _react.default.createElement("div", {
-        className: "w-1/3"
-      }), _react.default.createElement("div", {
-        className: "w-1/3"
+        className: "flex justify-center"
       }, _react.default.createElement("button", {
         type: "submit",
-        className: "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-      }, "Add map")), _react.default.createElement("div", {
-        className: "md:w-1/3"
-      })));
+        className: "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-2 rounded focus:outline-none focus:shadow-outline"
+      }, "Add map")))));
     }
-  }));
+  });
 };
 
 exports.MapBuilder = MapBuilder;

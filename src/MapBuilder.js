@@ -32,7 +32,6 @@ export const MapBuilder = (props) => {
   }
 
   return (
-    <div className="text-center w-full max-w-lg">
       <Formik
         initialValues={{
           lonField: fields[0].name,
@@ -42,14 +41,12 @@ export const MapBuilder = (props) => {
         }}
         onSubmit={values => handleSubmit(values)}
         render={({ values, setFieldValue }) => (
-          <Form className="bg-white">
-
-            <div className="flex flex-wrap -mx-3 mb-2">
-
-              <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                <label htmlFor="lonField" className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">Longitude field</label>
+          <Form className="bg-white text-xsm p-3 text-left ">
+            <div className="flex flex-wrap ">
+              <div className="w-full mb-3">
+                <label htmlFor="lonField" className="text-xsm font-bold uppercase text-gray-700">Longitude field</label>
                 <div className="relative">
-                  <Field name="lonField" component="select" placeholder="Longitude field" className="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
+                  <Field name="lonField" component="select" placeholder="Longitude field" className="block appearance-none w-full mt-1 bg-gray-200 border border-gray-200 text-gray-700 py-2 px-2 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
                     {fields.map((field, index) => {
                       return <option value={field.name} key={`lonField${index}`}>{field.name}</option>
                     })}
@@ -60,10 +57,10 @@ export const MapBuilder = (props) => {
                 </div>
               </div>
 
-              <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                <label htmlFor="latField" className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">Latitude field</label>
+              <div className="w-full mb-3">
+                <label htmlFor="latField" className="text-xsm  font-bold uppercase text-gray-700">Latitude field</label>
                 <div className="relative">
-                  <Field name="latField" component="select" placeholder="Latitude field" className="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
+                  <Field name="latField" component="select" placeholder="Latitude field" className="block appearance-none w-full mt-1 bg-gray-200 border border-gray-200 text-gray-700 py-2 px-2 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
                     {fields.map((field, index) => {
                       return <option value={field.name} key={`latField${index}`}>{field.name}</option>
                     })}
@@ -74,29 +71,23 @@ export const MapBuilder = (props) => {
                 </div>
               </div>
 
-            </div>
-
-            <div className="flex flex-wrap -mx-3 mb-2">
-              <div className="w-full md:w-full px-3 mb-6 md:mb-0">
-                <label htmlFor="infobox" className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">Infobox</label>
+            <div className="w-full mb-3">
+                <label htmlFor="infobox" className="text-xsm  font-bold uppercase text-gray-700">Infobox</label>
                 <div className="relative">
-                  <Field name="infobox" type="text" placeholder="My popup: ${data.fieldName}" className="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" />
+                  <Field name="infobox" type="text" placeholder="My popup: ${data.fieldName}" className="block appearance-none w-full mt-1 bg-gray-200 border border-gray-200 text-gray-700 py-2 px-2 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" />
                 </div>
-              </div>
             </div>
-
-            <div className="flex items-center">
-              <div className="w-1/3"></div>
-              <div className="w-1/3">
-                <button type="submit" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
-                  Add map
-                </button>
+            
+            <div className="w-full mb-3">       
+              <div className="flex justify-center">
+                  <button type="submit" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-2 rounded focus:outline-none focus:shadow-outline">
+                    Add map
+                  </button>
               </div>
-              <div className="md:w-1/3"></div>
-            </div>
+            </div>  
+          </div>  
           </Form>
         )}
       />
-    </div>
   );
 }
