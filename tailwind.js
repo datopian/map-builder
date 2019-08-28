@@ -1,6 +1,11 @@
 module.exports = {
   theme: {
-    extend: {}
+    extend: {
+      fontSize: {
+        'xsm': '.687rem',
+      }
+
+    }
   },
   variants: {},
   plugins: []
