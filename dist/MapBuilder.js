@@ -5,11 +5,15 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.MapBuilder = void 0;
 
+require("./i18n/i18n");
+
 var _react = _interopRequireDefault(require("react"));
 
 var _formik = require("formik");
 
 require("./css/tailwind.css");
+
+var _reactI18next = require("react-i18next");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -17,10 +21,13 @@ var MapBuilder = function MapBuilder(props) {
   // Make a copy of passed view so that we don't mutate it:
   var view = JSON.parse(JSON.stringify(props.view));
 
+  var _useTranslation = (0, _reactI18next.useTranslation)(),
+      t = _useTranslation.t;
+
   if (!view.resources) {
-    return _react.default.createElement("div", null, "MapBuilder requires resource to be compiled into view.");
+    return _react.default.createElement("div", null, t('MapBuilder requires resource to be compiled into view.'));
   } else if (!view.resources[0] || !view.resources[0].schema) {
-    return _react.default.createElement("div", null, "MapBuilder requires resource schema.");
+    return _react.default.createElement("div", null, t('MapBuilder requires resource schema.'));
   } // TODO: make it work with multiple resources
 
 
@@ -66,7 +73,7 @@ var MapBuilder = function MapBuilder(props) {
       }, _react.default.createElement("label", {
         htmlFor: "lonField",
         className: "text-xs font-bold uppercase text-gray-700"
-      }, "Longitude field"), _react.default.createElement("div", {
+      }, t('Longitude field')), _react.default.createElement("div", {
         className: "relative"
       }, _react.default.createElement(_formik.Field, {
         name: "lonField",
@@ -91,7 +98,7 @@ var MapBuilder = function MapBuilder(props) {
       }, _react.default.createElement("label", {
         htmlFor: "latField",
         className: "text-xs  font-bold uppercase text-gray-700"
-      }, "Latitude field"), _react.default.createElement("div", {
+      }, t('Latitude field')), _react.default.createElement("div", {
         className: "relative"
       }, _react.default.createElement(_formik.Field, {
         name: "latField",
@@ -116,12 +123,12 @@ var MapBuilder = function MapBuilder(props) {
       }, _react.default.createElement("label", {
         htmlFor: "infobox",
         className: "text-xs  font-bold uppercase text-gray-700"
-      }, "Infobox"), _react.default.createElement("div", {
+      }, t('Infobox')), _react.default.createElement("div", {
         className: "relative"
       }, _react.default.createElement(_formik.Field, {
         name: "infobox",
         type: "text",
-        placeholder: "My popup: ${data.fieldName}",
+        placeholder: t('My popup') + ": ${data.fieldName}",
         className: "block appearance-none w-full mt-1 bg-gray-200 border border-gray-200 text-gray-700 py-2 px-2 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
       }))), _react.default.createElement("div", {
         className: "w-full mb-3"
@@ -130,7 +137,7 @@ var MapBuilder = function MapBuilder(props) {
       }, _react.default.createElement("button", {
         type: "submit",
         className: "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-2 rounded focus:outline-none focus:shadow-outline"
-      }, "Add map")))));
+      }, t('Add map'))))));
     }
   });
 };
