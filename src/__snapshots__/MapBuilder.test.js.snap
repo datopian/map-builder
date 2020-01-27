@@ -2,159 +2,145 @@
 
 exports[`renders UI 1`] = `
 <div>
-  <div
-    class="text-center w-full max-w-lg"
+  <form
+    class="bg-white text-xs p-3 text-left "
   >
-    <form
-      class="bg-white"
+    <div
+      class="flex flex-wrap "
     >
       <div
-        class="flex flex-wrap -mx-3 mb-2"
+        class="w-full mb-3"
       >
-        <div
-          class="w-full md:w-1/2 px-3 mb-6 md:mb-0"
+        <label
+          class="text-xs font-bold uppercase text-gray-700"
+          for="lonField"
         >
-          <label
-            class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-            for="lonField"
-          >
-            Longitude field
-          </label>
-          <div
-            class="relative"
-          >
-            <select
-              class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-              name="lonField"
-              placeholder="Longitude field"
-            >
-              <option
-                value="a"
-              >
-                a
-              </option>
-              <option
-                value="b"
-              >
-                b
-              </option>
-              <option
-                value="c"
-              >
-                c
-              </option>
-            </select>
-            <div
-              class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700"
-            >
-              <svg
-                class="fill-current h-4 w-4"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
-                />
-              </svg>
-            </div>
-          </div>
-        </div>
+          Longitude field
+        </label>
         <div
-          class="w-full md:w-1/2 px-3 mb-6 md:mb-0"
+          class="relative"
         >
-          <label
-            class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-            for="latField"
+          <select
+            class="block appearance-none w-full mt-1 bg-gray-200 border border-gray-200 text-gray-700 py-2 px-2 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+            name="lonField"
+            placeholder="Longitude field"
           >
-            Latitude field
-          </label>
+            <option
+              value="a"
+            >
+              a
+            </option>
+            <option
+              value="b"
+            >
+              b
+            </option>
+            <option
+              value="c"
+            >
+              c
+            </option>
+          </select>
           <div
-            class="relative"
+            class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700"
           >
-            <select
-              class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-              name="latField"
-              placeholder="Latitude field"
+            <svg
+              class="fill-current h-4 w-4"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <option
-                value="a"
-              >
-                a
-              </option>
-              <option
-                value="b"
-              >
-                b
-              </option>
-              <option
-                value="c"
-              >
-                c
-              </option>
-            </select>
-            <div
-              class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700"
-            >
-              <svg
-                class="fill-current h-4 w-4"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
-                />
-              </svg>
-            </div>
+              <path
+                d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+              />
+            </svg>
           </div>
         </div>
       </div>
       <div
-        class="flex flex-wrap -mx-3 mb-2"
+        class="w-full mb-3"
       >
-        <div
-          class="w-full md:w-full px-3 mb-6 md:mb-0"
+        <label
+          class="text-xs  font-bold uppercase text-gray-700"
+          for="latField"
         >
-          <label
-            class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-            for="infobox"
+          Latitude field
+        </label>
+        <div
+          class="relative"
+        >
+          <select
+            class="block appearance-none w-full mt-1 bg-gray-200 border border-gray-200 text-gray-700 py-2 px-2 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+            name="latField"
+            placeholder="Latitude field"
           >
-            Infobox
-          </label>
+            <option
+              value="a"
+            >
+              a
+            </option>
+            <option
+              value="b"
+            >
+              b
+            </option>
+            <option
+              value="c"
+            >
+              c
+            </option>
+          </select>
           <div
-            class="relative"
+            class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700"
           >
-            <input
-              class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-              name="infobox"
-              placeholder="My popup: \${data.fieldName}"
-              type="text"
-              value=""
-            />
+            <svg
+              class="fill-current h-4 w-4"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+              />
+            </svg>
           </div>
         </div>
       </div>
       <div
-        class="flex items-center"
+        class="w-full mb-3"
+      >
+        <label
+          class="text-xs  font-bold uppercase text-gray-700"
+          for="infobox"
+        >
+          Infobox
+        </label>
+        <div
+          class="relative"
+        >
+          <input
+            class="block appearance-none w-full mt-1 bg-gray-200 border border-gray-200 text-gray-700 py-2 px-2 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+            name="infobox"
+            placeholder="My popup: \${data.fieldName}"
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+      <div
+        class="w-full mb-3"
       >
         <div
-          class="w-1/3"
-        />
-        <div
-          class="w-1/3"
+          class="flex justify-center"
         >
           <button
-            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-2 rounded focus:outline-none focus:shadow-outline"
             type="submit"
           >
             Add map
           </button>
         </div>
-        <div
-          class="md:w-1/3"
-        />
       </div>
-    </form>
-  </div>
+    </div>
+  </form>
 </div>
 `;
 

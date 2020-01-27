@@ -1,0 +1,9 @@
+{
+  "MapBuilder requires resource to be compiled into view.": "MapBuilder kræver, at ressourcerne skal sammenstilles til visning.",
+  "MapBuilder requires resource schema.": "MapBuilder kræver ressourceskema.",
+  "Longitude field": "Længdegrad",
+  "Latitude field": "Breddegrad",
+  "Infobox": "Infoboks",
+  "Add map": "Tilføj kort",
+  "My popup": "Min pop-up"
+}
