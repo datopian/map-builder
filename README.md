@@ -1,3 +1,5 @@
+[![npm version](https://badge.fury.io/js/%40datopian%2Fmap-builder.svg)](https://badge.fury.io/js/%40datopian%2Fmap-builder)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Quick start
