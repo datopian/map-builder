@@ -1,6 +1,6 @@
 {
-  "name": "map-builder",
-  "version": "0.0.1",
+  "name": "@datopian/map-builder",
+  "version": "0.1.0",
   "private": false,
   "module": "dist/index.js",
   "main": "dist/index.js",
