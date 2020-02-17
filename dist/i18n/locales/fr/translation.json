@@ -1,9 +1,9 @@
 {
-  "MapBuilder requires resource to be compiled into view.": "MapBuilder requires resource to be compiled into view.",
-  "MapBuilder requires resource schema.": "MapBuilder requires resource schema.",
-  "Longitude field": "Longitude field",
-  "Latitude field": "Latitude field",
-  "Infobox": "Infobox",
-  "Add map": "Add map",
-  "My popup": "My popup"
+  "MapBuilder requires resource to be compiled into view.": "L’éditeur de carte nécessite qu'une ressource soit compilée en vue.",
+  "MapBuilder requires resource schema.": "Le schéma de la ressource est requis pour l’éditeur de carte.",
+  "Longitude field": "Longitude",
+  "Latitude field": "Latitude",
+  "Infobox": "Boite d'information",
+  "Add map": "Ajouter une carte",
+  "My popup": "Fenêtre contextuelle"
 }
