@@ -42,7 +42,7 @@ export const MapBuilder = (props) => {
         initialValues={{
           lonField: fields[0].name,
           latField: fields[0].name,
-          geomField: null,
+          geomField: '',
           infobox: ''
         }}
         onSubmit={values => handleSubmit(values)}
@@ -69,6 +69,19 @@ export const MapBuilder = (props) => {
                   <Field name="latField" component="select" placeholder="Latitude field" className="block appearance-none w-full mt-1 bg-gray-200 border border-gray-200 text-gray-700 py-2 px-2 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
                     {fields.map((field, index) => {
                       return <option value={field.name} key={`latField${index}`}>{field.name}</option>
+                    })}
+                  </Field>
+                  <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                    <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+                  </div>
+                </div>
+              </div>
+              <div className="w-full mb-3">
+                <label htmlFor="geomField" className="text-xs  font-bold uppercase text-gray-700">{t('Geometry field')}</label>
+                <div className="relative">
+                  <Field name="geomField" component="select" placeholder="Geometry field" className="block appearance-none w-full mt-1 bg-gray-200 border border-gray-200 text-gray-700 py-2 px-2 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
+                    {fields.map((field, index) => {
+                      return <option value={field.name} key={`geomField${index}`}>{field.name}</option>
                     })}
                   </Field>
                   <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
