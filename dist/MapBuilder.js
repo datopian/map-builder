@@ -55,7 +55,7 @@ var MapBuilder = function MapBuilder(props) {
     initialValues: {
       lonField: fields[0].name,
       latField: fields[0].name,
-      geomField: null,
+      geomField: '',
       infobox: ''
     },
     onSubmit: function onSubmit(values) {
@@ -109,6 +109,31 @@ var MapBuilder = function MapBuilder(props) {
         return _react.default.createElement("option", {
           value: field.name,
           key: "latField".concat(index)
+        }, field.name);
+      })), _react.default.createElement("div", {
+        className: "pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700"
+      }, _react.default.createElement("svg", {
+        className: "fill-current h-4 w-4",
+        xmlns: "http://www.w3.org/2000/svg",
+        viewBox: "0 0 20 20"
+      }, _react.default.createElement("path", {
+        d: "M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+      }))))), _react.default.createElement("div", {
+        className: "w-full mb-3"
+      }, _react.default.createElement("label", {
+        htmlFor: "geomField",
+        className: "text-xs  font-bold uppercase text-gray-700"
+      }, t('Geometry field')), _react.default.createElement("div", {
+        className: "relative"
+      }, _react.default.createElement(_formik.Field, {
+        name: "geomField",
+        component: "select",
+        placeholder: "Geometry field",
+        className: "block appearance-none w-full mt-1 bg-gray-200 border border-gray-200 text-gray-700 py-2 px-2 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+      }, fields.map(function (field, index) {
+        return _react.default.createElement("option", {
+          value: field.name,
+          key: "geomField".concat(index)
         }, field.name);
       })), _react.default.createElement("div", {
         className: "pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700"
