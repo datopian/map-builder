@@ -47,7 +47,7 @@ export const MapBuilder = (props) => {
         }}
         onSubmit={values => handleSubmit(values)}
         render={({ values, setFieldValue }) => (
-          <Form className="bg-white text-xs p-3 text-left ">
+          <Form className="bg-white text-xs p-3 text-left map-builder">
             <div className="flex flex-wrap ">
               <div className="w-full mb-3">
                 <label htmlFor="lonField" className="text-xs font-bold uppercase text-gray-700">{t('Longitude field')}</label>

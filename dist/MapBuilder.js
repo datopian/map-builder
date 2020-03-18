@@ -65,7 +65,7 @@ var MapBuilder = function MapBuilder(props) {
       var values = _ref.values,
           setFieldValue = _ref.setFieldValue;
       return _react.default.createElement(_formik.Form, {
-        className: "bg-white text-xs p-3 text-left "
+        className: "bg-white text-xs p-3 text-left map-builder"
       }, _react.default.createElement("div", {
         className: "flex flex-wrap "
       }, _react.default.createElement("div", {
