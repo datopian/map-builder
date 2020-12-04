@@ -63,10 +63,10 @@ export const MapBuilder = (props) => {
                 </div>
               </div>
 
-              <div className="w-full mb-3" id="latField" aria-label="Latitude field">
+              <div className="w-full mb-3">
                 <label htmlFor="latField" className="text-xs font-bold uppercase text-gray-700">{t('Latitude field')}</label>
                 <div className="relative">
-                  <Field name="latField" component="select" placeholder="Latitude field" className="block appearance-none w-full mt-1 bg-gray-200 border border-gray-200 text-gray-700 py-2 px-2 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
+                  <Field name="latField" id="latField" aria-label="Latitude field" component="select" placeholder="Latitude field" className="block appearance-none w-full mt-1 bg-gray-200 border border-gray-200 text-gray-700 py-2 px-2 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
                     {fields.map((field, index) => {
                       return <option value={field.name} key={`latField${index}`}>{field.name}</option>
                     })}
@@ -79,7 +79,7 @@ export const MapBuilder = (props) => {
               <div className="w-full mb-3">
                 <label htmlFor="geomField" className="text-xs  font-bold uppercase text-gray-700">{t('Geometry field')}</label>
                 <div className="relative">
-                  <Field name="geomField" component="select" placeholder="Geometry field" className="block appearance-none w-full mt-1 bg-gray-200 border border-gray-200 text-gray-700 py-2 px-2 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
+                  <Field name="geomField" id="geomField" aria-label="Geometry field" component="select" placeholder="Geometry field" className="block appearance-none w-full mt-1 bg-gray-200 border border-gray-200 text-gray-700 py-2 px-2 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
                     {fields.map((field, index) => {
                       return <option value={field.name} key={`geomField${index}`}>{field.name}</option>
                     })}
