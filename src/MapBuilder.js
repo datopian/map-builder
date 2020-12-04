@@ -90,10 +90,10 @@ export const MapBuilder = (props) => {
                 </div>
               </div>
 
-            <div className="w-full mb-3">
+            <div className="w-full mb-3" id="infobox" role="group" aria-label={t('My popup') + ": ${data.fieldName}"}>
                 <label htmlFor="infobox" className="text-xs  font-bold uppercase text-gray-700">{t('Infobox')}</label>
                 <div className="relative">
-                  <Field name="infobox" type="text" placeholder={t('My popup') + ": ${data.fieldName}"} className="block appearance-none w-full mt-1 bg-gray-200 border border-gray-200 text-gray-700 py-2 px-2 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" />
+                  <Field name="infobox" aria-label={t('My popup') + ": ${data.fieldName}"} type="text" placeholder={t('My popup') + ": ${data.fieldName}"} className="block appearance-none w-full mt-1 bg-gray-200 border border-gray-200 text-gray-700 py-2 px-2 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" />
                 </div>
             </div>
 
