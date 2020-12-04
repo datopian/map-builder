@@ -77,6 +77,8 @@ var MapBuilder = function MapBuilder(props) {
         className: "relative"
       }, _react.default.createElement(_formik.Field, {
         name: "lonField",
+        id: "lonField",
+        title: "Longitude field",
         component: "select",
         placeholder: "Longitude field",
         className: "block appearance-none w-full mt-1 bg-gray-200 border border-gray-200 text-gray-700 py-2 px-2 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
@@ -94,10 +96,12 @@ var MapBuilder = function MapBuilder(props) {
       }, _react.default.createElement("path", {
         d: "M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
       }))))), _react.default.createElement("div", {
-        className: "w-full mb-3"
+        className: "w-full mb-3",
+        id: "latField",
+        "aria-label": "Latitude field"
       }, _react.default.createElement("label", {
         htmlFor: "latField",
-        className: "text-xs  font-bold uppercase text-gray-700"
+        className: "text-xs font-bold uppercase text-gray-700"
       }, t('Latitude field')), _react.default.createElement("div", {
         className: "relative"
       }, _react.default.createElement(_formik.Field, {

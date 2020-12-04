@@ -3,7 +3,7 @@
 exports[`renders UI 1`] = `
 <div>
   <form
-    class="bg-white text-xs p-3 text-left "
+    class="bg-white text-xs p-3 text-left map-builder"
   >
     <div
       class="flex flex-wrap "
