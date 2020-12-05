@@ -52,7 +52,7 @@ export const MapBuilder = (props) => {
               <div className="w-full mb-3">
                 <label htmlFor="lonField" className="text-xs font-bold uppercase text-gray-700">{t('Longitude field')}</label>
                 <div className="relative">
-                  <Field name="lonField" component="select" placeholder="Longitude field" className="block appearance-none w-full mt-1 bg-gray-200 border border-gray-200 text-gray-700 py-2 px-2 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
+                  <Field name="lonField" id="lonField" title="Longitude field" component="select" placeholder="Longitude field" className="block appearance-none w-full mt-1 bg-gray-200 border border-gray-200 text-gray-700 py-2 px-2 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
                     {fields.map((field, index) => {
                       return <option value={field.name} key={`lonField${index}`}>{field.name}</option>
                     })}
@@ -64,9 +64,9 @@ export const MapBuilder = (props) => {
               </div>
 
               <div className="w-full mb-3">
-                <label htmlFor="latField" className="text-xs  font-bold uppercase text-gray-700">{t('Latitude field')}</label>
+                <label htmlFor="latField" className="text-xs font-bold uppercase text-gray-700">{t('Latitude field')}</label>
                 <div className="relative">
-                  <Field name="latField" component="select" placeholder="Latitude field" className="block appearance-none w-full mt-1 bg-gray-200 border border-gray-200 text-gray-700 py-2 px-2 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
+                  <Field name="latField" id="latField" aria-label="Latitude field" component="select" placeholder="Latitude field" className="block appearance-none w-full mt-1 bg-gray-200 border border-gray-200 text-gray-700 py-2 px-2 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
                     {fields.map((field, index) => {
                       return <option value={field.name} key={`latField${index}`}>{field.name}</option>
                     })}
@@ -79,7 +79,7 @@ export const MapBuilder = (props) => {
               <div className="w-full mb-3">
                 <label htmlFor="geomField" className="text-xs  font-bold uppercase text-gray-700">{t('Geometry field')}</label>
                 <div className="relative">
-                  <Field name="geomField" component="select" placeholder="Geometry field" className="block appearance-none w-full mt-1 bg-gray-200 border border-gray-200 text-gray-700 py-2 px-2 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
+                  <Field name="geomField" id="geomField" aria-label="Geometry field" component="select" placeholder="Geometry field" className="block appearance-none w-full mt-1 bg-gray-200 border border-gray-200 text-gray-700 py-2 px-2 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
                     {fields.map((field, index) => {
                       return <option value={field.name} key={`geomField${index}`}>{field.name}</option>
                     })}
@@ -90,10 +90,10 @@ export const MapBuilder = (props) => {
                 </div>
               </div>
 
-            <div className="w-full mb-3">
+            <div className="w-full mb-3" id="infobox" role="group" aria-label={t('My popup') + ": ${data.fieldName}"}>
                 <label htmlFor="infobox" className="text-xs  font-bold uppercase text-gray-700">{t('Infobox')}</label>
                 <div className="relative">
-                  <Field name="infobox" type="text" placeholder={t('My popup') + ": ${data.fieldName}"} className="block appearance-none w-full mt-1 bg-gray-200 border border-gray-200 text-gray-700 py-2 px-2 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" />
+                  <Field name="infobox" aria-label={t('My popup') + ": ${data.fieldName}"} type="text" placeholder={t('My popup') + ": ${data.fieldName}"} className="block appearance-none w-full mt-1 bg-gray-200 border border-gray-200 text-gray-700 py-2 px-2 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" />
                 </div>
             </div>
 

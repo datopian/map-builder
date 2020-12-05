@@ -3,7 +3,7 @@
 exports[`renders UI 1`] = `
 <div>
   <form
-    class="bg-white text-xs p-3 text-left "
+    class="bg-white text-xs p-3 text-left map-builder"
   >
     <div
       class="flex flex-wrap "
@@ -22,8 +22,10 @@ exports[`renders UI 1`] = `
         >
           <select
             class="block appearance-none w-full mt-1 bg-gray-200 border border-gray-200 text-gray-700 py-2 px-2 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+            id="lonField"
             name="lonField"
             placeholder="Longitude field"
+            title="Longitude field"
           >
             <option
               value="a"
@@ -60,7 +62,7 @@ exports[`renders UI 1`] = `
         class="w-full mb-3"
       >
         <label
-          class="text-xs  font-bold uppercase text-gray-700"
+          class="text-xs font-bold uppercase text-gray-700"
           for="latField"
         >
           Latitude field
@@ -69,7 +71,9 @@ exports[`renders UI 1`] = `
           class="relative"
         >
           <select
+            aria-label="Latitude field"
             class="block appearance-none w-full mt-1 bg-gray-200 border border-gray-200 text-gray-700 py-2 px-2 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+            id="latField"
             name="latField"
             placeholder="Latitude field"
           >
@@ -117,7 +121,9 @@ exports[`renders UI 1`] = `
           class="relative"
         >
           <select
+            aria-label="Geometry field"
             class="block appearance-none w-full mt-1 bg-gray-200 border border-gray-200 text-gray-700 py-2 px-2 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+            id="geomField"
             name="geomField"
             placeholder="Geometry field"
           >
@@ -153,7 +159,10 @@ exports[`renders UI 1`] = `
         </div>
       </div>
       <div
+        aria-label="My popup: \${data.fieldName}"
         class="w-full mb-3"
+        id="infobox"
+        role="group"
       >
         <label
           class="text-xs  font-bold uppercase text-gray-700"
@@ -165,6 +174,7 @@ exports[`renders UI 1`] = `
           class="relative"
         >
           <input
+            aria-label="My popup: \${data.fieldName}"
             class="block appearance-none w-full mt-1 bg-gray-200 border border-gray-200 text-gray-700 py-2 px-2 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
             name="infobox"
             placeholder="My popup: \${data.fieldName}"
