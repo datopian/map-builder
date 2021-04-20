@@ -1,0 +1,10 @@
+{
+  "MapBuilder requires resource to be compiled into view.": "O editor de mapas requer que o recurso seja compilado na visão.",
+  "MapBuilder requires resource schema.": "O esquema do recurso é necessário para o editor de mapas.",
+  "Longitude field": "Campo de longitude",
+  "Latitude field": "Campo de latitude",
+  "Infobox": "Caixa de informação",
+  "Add map": "Adicionar mapa",
+  "My popup": "Janela contextual",
+  "Geometry field": "Campo geométrico"
+}
